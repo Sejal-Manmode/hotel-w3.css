@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<!-- title of the website -->
+<title>Stay Go</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- w3.css link -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<!-- font-awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- smooth scrolling -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button w3-black">StayGo</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#rooms" class="w3-bar-item w3-button">Rooms</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <div class="w3-dropdown-hover">
+      <button class="w3-button w3-hide-small">Pages</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Bookings</a>
+        <a href="#" class="w3-bar-item w3-button">Our Team</a>
+        <a href="#" class="w3-bar-item w3-button">Testimonial</a>
+      </div>
+    </div>
+      <input type="text" class="w3-bar-item w3-input w3-white w3-mobile w3-light-grey" placeholder="Search..">
+    <button class="w3-bar-item w3-button w3-green w3-mobile ">Go</button>
+    </div>
+  </div>
+</div>
+
+<!-- Header Section -->
+ <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image w3-opacity" src="livingroom.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding  w3-opacity-min"></span> <span class="w3-hide-small w3-text-black">Perfect Stay Every Time
+    </span></h1>
+  </div>
+</header>
+
+
+<div class="w3-container w3-padding-64 w3-center" id="rooms">
+<h2>Rooms That Feels Like Home</h2>
+<p>Comfort, styles and all the essentials - just like home, only better</p></div>
+
+<!-- Cards Section -->
+<div class="w3-row-padding">
+
+  <!-- card 1 -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-card-4 w3-center" style="width:100%;max-width:400px">
+  <h2>Boutique rooms</h2>
+    <img src="1.webp" alt="Alps" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>Creative rooms in boutique hotels can range from themed suites with elaborate decor and furnishings.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-card-4 w3-center" style="width:100%;max-width:400px">
+  <h2>Lodge rooms</h2>
+    <img src="2.webp" alt="Alps" style="width:100%; max-height: 50%;">
+    <div class="w3-container w3-center">
+      <p>These rooms offer a cozy  accommodation  for travelers looking to experience the great outdoors.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-card-4 w3-center" style="width:100%;max-width:400px">
+  <h2>Luxury rooms</h2>
+    <img src="3.webp" alt="Alps" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>High-end accommodations that offer guests a premium and upscale experience during their stay.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+
+    <!-- card 4 -->
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-card-4 w3-center" style="width:100%;max-width:400px">
+  <h2>Villa rooms</h2>
+    <img src="4.webp" alt="Alps" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>As the name suggests, this would be a separate villa of usually high quality and with  luxurious amenities.</p>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+<hr>  
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="H.jpg" class="w3-round w3-image w3-opacity-min w3-center" alt="Table Setting" width="600" height="">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Us</h1><br>
+      <h5 class="w3-center">Tradition since 1889</h5>
+      <p class="w3-large">Our hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided inside a hotel room may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality beds, a dresser, a refrigerator, and other kitchen facilities, upholstered chairs, a television, and en-suite bathrooms. Small, lower-priced hotels may offer only the most basic guest services and facilities.</p>
+    </div>
+  </div>
+
+<hr>
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Contact Us</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Mumbai, India<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 9999999999<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-white">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>StayGo</h3>
+        <p>Ready to escape and create unforgettable memories? Book your stay now and experience luxury, comfort, and breathtaking views at our hotel.</p>      
+      </div>
+    
+      <div class="w3-third">
+        <div class="w3-container  w3-center w3-margin-top">
+    <h3>Follow Us</h3>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
